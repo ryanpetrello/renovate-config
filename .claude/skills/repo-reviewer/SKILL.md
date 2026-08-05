@@ -12,7 +12,7 @@ You are a senior engineer reviewing changes to **renovate-config**, a shared Ren
 ## Architecture Overview
 
 ### Repository Purpose
-This is a **Renovate shareable config** repository. It contains JSON preset files that other repositories extend via `local>redhat/rhel-ai/renovate-config` or `gitlab>redhat/rhel-ai/renovate-config` references. Changes here affect dependency update behavior across the entire AIPCC organization.
+This is a **Renovate shareable config** repository. It contains JSON preset files that other repositories extend via `github>opendatahub-io/renovate-config` references. Changes here affect dependency update behavior across the entire AIPCC organization.
 
 ### Preset Hierarchy
 The presets follow a layered architecture:
@@ -74,8 +74,8 @@ The `.gitlab-ci.yml` runs `renovate-config-validator --strict` via a Node.js con
 
 **Required:**
 - Preset references in `extends` arrays must use correct syntax:
-  - `local>redhat/rhel-ai/renovate-config` for same-platform references from consuming repos
-  - `gitlab>redhat/rhel-ai/renovate-config//subpath.json` for cross-preset references within this repo
+  - `github>opendatahub-io/renovate-config` for same-platform references from consuming repos
+  - `github>opendatahub-io/renovate-config//subpath.json` for cross-preset references within this repo
 - File paths in preset references must match actual file locations in the repo
 - New presets must be reachable (either directly extended or documented for consumer use)
 

@@ -47,7 +47,7 @@ Most repositories should extend the default preset:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>redhat/rhel-ai/renovate-config"
+    "github>opendatahub-io/renovate-config"
   ]
 }
 ```
@@ -59,8 +59,8 @@ Container build repositories extend default + containers preset:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>redhat/rhel-ai/renovate-config",
-    "local>redhat/rhel-ai/renovate-config//rhel-ai/containers"
+    "github>opendatahub-io/renovate-config",
+    "github>opendatahub-io/renovate-config//rhel-ai/containers"
   ]
 }
 ```
@@ -72,8 +72,8 @@ Disk image repositories extend default + disk-images preset:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>redhat/rhel-ai/renovate-config",
-    "local>redhat/rhel-ai/renovate-config//rhel-ai/disk-images"
+    "github>opendatahub-io/renovate-config",
+    "github>opendatahub-io/renovate-config//rhel-ai/disk-images"
   ]
 }
 ```
@@ -85,8 +85,8 @@ RHAIIS repositories extend default + RHAIIS preset:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>redhat/rhel-ai/renovate-config",
-    "local>redhat/rhel-ai/renovate-config//rhaiis/rhaiis"
+    "github>opendatahub-io/renovate-config",
+    "github>opendatahub-io/renovate-config//rhaiis/rhaiis"
   ]
 }
 ```
@@ -99,8 +99,8 @@ Repositories that use AIPCC base images from `quay.io/aipcc/base-images`, `regis
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>redhat/rhel-ai/renovate-config",
-    "local>redhat/rhel-ai/renovate-config//base-images"
+    "github>opendatahub-io/renovate-config",
+    "github>opendatahub-io/renovate-config//base-images"
   ]
 }
 ```
@@ -123,8 +123,8 @@ Repositories that enforce non-author approval on merge requests should extend th
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>redhat/rhel-ai/renovate-config",
-    "local>redhat/rhel-ai/renovate-config//gitlab-approvals"
+    "github>opendatahub-io/renovate-config",
+    "github>opendatahub-io/renovate-config//gitlab-approvals"
   ]
 }
 ```
@@ -168,8 +168,8 @@ Add your own patterns while keeping the preset benefits:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>redhat/rhel-ai/renovate-config",
-    "local>redhat/rhel-ai/renovate-config//rhel-ai/containers"
+    "github>opendatahub-io/renovate-config",
+    "github>opendatahub-io/renovate-config//rhel-ai/containers"
   ],
   "customManagers": [
     {
